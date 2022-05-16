@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-medium bg-white text-primary-color border-2 border-primary-color px-6 py-1 transition  hover:bg-primary-color hover:text-white;
+  }
+
+  .btn-primary {
+    @apply bg-primary-color text-white hover:bg-white hover:text-primary-color;
+  }
+}
